@@ -27,7 +27,6 @@ app.use("/privateData", privateData);
 mongoConnection.connect();
 
 /** ---------- START SERVER ---------- **/
-app.set('port', process.env.PORT || 8888);
 
 app.listen(portDecision, function() {
     console.log('running on port', portDecision);
