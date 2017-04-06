@@ -1,0 +1,43 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Build-A-Band</a>
+        <div id="navbar" class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right">
+                <button ng-click="mlc.logOut()" class="btn btn-default">Log Out</button>
+                <button class="btn btn-default"><a href="#manageProfile">Manage Profile</a></button>
+                <button class="btn btn-default"><a href="#musicianList">Musician List</a></button>
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="col-md-offset-2 col-md-4" id="search">
+    <input type="text" class="form-control" name="search" ng-model="searchKeyword" placeholder="Search" />
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="col-md-offset-1 col-md-5">
+    <table class="table" id="list">
+        <tr>
+            <th>Name</th>
+            <th>Instrument</th>
+            <th>Genre</th>
+            <th>Experience</th>
+            <th>Zip Code</th>
+            <th>Contact</th>
+        </tr>
+        <tr ng-repeat="person in mlc.musicians | filter: searchKeyword">
+            <td>{{person.fullname}}</td>
+            <td>{{person.instrument}}</td>
+            <td>{{person.genre}}</td>
+            <td>{{person.experience}} yrs.</td>
+            <td>{{person.zipcode}}</td>
+            <td><a href="mailto:{{person.email}}">Message Me</a></td>
+        </tr>
+    </table>
+</div>
+<div class="col-md-5">
+    <ng-map class="myMap" zoom="12" center="[44.83293644, -93.302478]"></ng-map>
+</div>

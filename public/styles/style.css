@@ -1,0 +1,57 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url("background.jpg");
+    color: #c0c0c0;
+}
+
+form {
+    margin-bottom: 5em;
+}
+
+label, th, td, h5, h4 {
+    color: #B0BEC5;
+}
+
+#search, #profile {
+    margin-top: 2em;
+}
+
+#welcome {
+    margin-top: 5em;
+}
+
+#list {
+    margin-bottom: 5em;
+    text-shadow: 2px 2px #000000;
+}
+
+a {
+    color: inherit;
+}
+
+input {
+    margin-bottom: 2em;
+    color: #CFD8DC;
+}
+
+footer {
+    background-color: #000000;
+    color: #c0c0c0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 45px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.myMap {
+    height: 500px;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}

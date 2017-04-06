@@ -1,0 +1,21 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Build-A-Band</a>
+        <div id="navbar" class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right">
+                <button ng-click="mpc.logOut()" class="btn btn-default">Log Out</button>
+                <button class="btn btn-default"><a href="#manageProfile">Manage Profile</a></button>
+                <button class="btn btn-default"><a href="#musicianList">Musician List</a></button>
+            </form>
+        </div>
+    </div>
+</nav>
+<form id="profile" class="col-md-6 col-centered">
+    <input class="form-control" ng-model="mpc.newMusician.fullname" placeholder="{{mpc.currentUser.displayName}}" required>
+    <input class="form-control" ng-model="mpc.newMusician.email" placeholder="{{mpc.currentUser.email}}" required>
+    <input class="form-control" ng-model="mpc.newMusician.zipcode" type="number" placeholder="Zip Code" required>
+    <input class="form-control" ng-model="mpc.newMusician.instrument" placeholder="Instrument / Voice" required>
+    <input class="form-control" ng-model="mpc.newMusician.genre" placeholder="Playing Style / Genre" required>
+    <input class="form-control" ng-model="mpc.newMusician.experience" type="number" placeholder="Years of Experience" required>
+    <button class="form-control" ng-click="mpc.addMusician()">Create New User</button>
+</form>
