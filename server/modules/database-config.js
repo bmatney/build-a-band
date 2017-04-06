@@ -1,1 +1,1 @@
-module.exports = 'mongodb://admin:admin@ds153710.mlab.com:53710/build-a-band';
+module.exports = 'mongodb://admin:admin@ds155130.mlab.com:55130/heroku_9l5ndf86';
