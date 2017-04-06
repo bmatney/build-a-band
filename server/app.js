@@ -6,6 +6,8 @@ var mongoConnection = require('./modules/mongo-connection');
 var decoder = require('./modules/decoder');
 var musicians = require('./routes/musicians');
 var privateData = require('./routes/private-data');
+var portDecision = process.env.PORT || 3000;
+
 
 
 app.get('/', function(req, res) {
@@ -27,6 +29,6 @@ mongoConnection.connect();
 /** ---------- START SERVER ---------- **/
 app.set('port', process.env.PORT || 8888);
 
-app.listen(app.get('port'), function() {
-    console.log('Listening on port: ', app.get('port'));
+app.listen(portDecision, function() {
+    console.log('running on port', portDecision);
 });
