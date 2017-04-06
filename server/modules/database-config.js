@@ -1,1 +1,1 @@
-module.exports = 'mongodb://localhost:27017/sigma';
+module.exports = 'mongodb://admin:admin@ds153710.mlab.com:53710/build-a-band';
